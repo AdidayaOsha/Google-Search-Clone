@@ -1,29 +1,19 @@
-import {
-  Fragment,
-  JSXElementConstructor,
-  ReactElement,
-  ReactFragment,
-  ReactPortal,
-} from "react";
+import { Fragment, ReactPortal } from "react";
+import MainFooter from "./MainFooter";
 import MainHeader from "./MainHeader";
 
-function Layout(props: {
-  children:
-    | string
-    | number
-    | boolean
-    | ReactElement<any, string | JSXElementConstructor<any>>
-    | ReactFragment
-    | ReactPortal
-    | null
-    | undefined;
-}) {
+interface Props {
+  children: JSX.Element;
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <Fragment>
       <MainHeader />
-      <main className="lg:px-32 md:px-20 px-10 mt-6">{props.children}</main>
+      {children}
+      <MainFooter />
     </Fragment>
   );
-}
+};
 
 export default Layout;

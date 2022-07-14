@@ -1,9 +1,12 @@
-function App() {
+import Layout from "./components/layout/Layout";
+import MainSearch from "./components/layout/MainSearch";
+
+const App: React.FC = () => {
   return (
-    <div>
-      <h1 className="text-3xl text-black">This is a React App</h1>
-    </div>
+    <Layout>
+      <MainSearch />
+    </Layout>
   );
-}
+};
 
 export default App;
