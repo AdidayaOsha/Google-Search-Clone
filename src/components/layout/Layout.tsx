@@ -1,4 +1,4 @@
-import { Fragment, ReactPortal } from "react";
+import { Fragment } from "react";
 import MainFooter from "./MainFooter";
 import MainHeader from "./MainHeader";
 

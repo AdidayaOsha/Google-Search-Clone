@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 h-20">
+    <footer className="bg-gray-200 h-20">
       <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8 flex items-center justify-between h-full">
         <div className="flex justify-center items-center text-teal-600 w-20">
           <img
